@@ -14,17 +14,10 @@ class PlayerStats():
         self._players = reader.get_players()
 
     def top_scorers_by_nationality(self, nat):
-        '''
-        top = []
-        for player in self._players:
-            if (player.nationality == nat):
-                top.append(player)
-        '''
         players_by_nationality = filter(
             lambda player: player.nationality == nat,
             self._players
         )
-
         p_list =list(players_by_nationality)
 
         def sort_by_points(player):
