@@ -6,7 +6,7 @@ from player_stats import PlayerStats
 
 def main():
     url = "https://studies.cs.helsinki.fi/nhlstats/2022-23/players"
-    response = requests.get(url).json()
+    #response = requests.get(url).json()
     reader = PlayerReader(url)
     #print("JSON-muotoinen vastaus:")
     #print(response)
