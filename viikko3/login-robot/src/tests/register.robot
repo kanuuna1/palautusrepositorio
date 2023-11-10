@@ -25,6 +25,7 @@ Register With Valid Username And Too Short Password
 
 Register With Valid Username And Long Enough Password Containing Only Letters
     Input Credentials    kkka    salasana
+    Output Should Contain    Password must contain at least one number
 
 *** Keywords ***
 
